@@ -1,0 +1,6 @@
+<%= label_tag "Ciudad" %>
+<% if !@cities.blank? %>
+      <%= select("colaboration", "city_id", @cities.collect {|p| [ p.name, p.id ] }, { :prompt => "Ciudad" }) %>
+<% else %>
+      <%= select("city_id", "city_id", [], { :prompt => "Ciudad" }) %>
+<% end %>

@@ -1,0 +1,32 @@
+<header id='mainHeader'>
+	<div class='wrapper'>
+		<h1>Costo de Vida</h1>
+		<%= form_tag "/static_pages/search", :method => "get", id: "searchBar" do %> 
+		    <%= text_field_tag :search, params[:search], id: "searchField", placeholder: "Buscar Ciudad" %> 
+		<% end %>
+		<p>¿Está pensando en mudarse? Me ofrecieron un trabajo en una ciudad y no saben la cantidad media que gaste en ella? Aquí es el lugar.</p>
+
+		<p>16.168 personas en 1706 ciudades han colaborado. Colaborar con los datos que usted también la ciudad donde usted vive.</p>
+		<%= link_to 'Colaborar', '/colaborar', class: 'button', id:'colaborar' %>
+	</div>
+</header>
+<div id='homeMain'>
+	<section>
+		<h2>Más accesados</h2>
+		<ul>
+
+		</ul>
+	</section>
+	<section>
+		<h2>Últimas Colaboraciones</h2>
+		<ul>
+			
+		</ul>
+	</section>
+	<section>
+		<h2>Colabora</h2>
+		<ul>
+			
+		</ul>
+	</section>
+</div>

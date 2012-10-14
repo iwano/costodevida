@@ -1,0 +1,66 @@
+// Place all the styles related to the colaborations controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+header#secondHeader{
+	height:100px;
+	background:#87CCE5;
+	h1{
+		font-size: 36px;
+		display: inline-block;
+		color:#FFF;
+		margin-top: 12px;
+		a{
+			text-decoration: none;
+			color:#FFF;
+		}
+	}
+	#searchBar{
+		float:right;
+		display: inline-block;
+		padding:10px;
+		background: #6FB5CD;
+		#searchField{
+			width:330px;
+			height:30px;
+			font-size: 24px;
+			padding:15px;
+		}
+	}
+}
+#main{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	#mainNav{
+		float: left;
+		ul{
+			list-style-type: none;
+			width:220px;
+		li{
+			color:#666;
+			padding-bottom: 10px;
+			&:hover{
+				color:#FD745B;
+			}
+		}
+	}
+	}
+	#colaborationForm{
+		float:left;
+		select{
+			padding: 10px;
+			margin:10px;
+			width:200px;
+			font-size:3em;
+			line-height: 4em;
+		}
+	}
+}
+
+.field{
+	height: 30px;
+	line-height: 20px;
+	font-size:20px;
+	padding-left: 1em;
+	margin:10px;
+}

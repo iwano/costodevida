@@ -1,0 +1,8 @@
+<header id='secondHeader'>
+	<div class='wrapper'>
+		<h1><a href='/'>Costo de Vida</a></h1>
+		<%= form_tag "/static_pages/search", :method => "get", id: "searchBar" do %> 
+		    <%= text_field_tag :search, params[:search], id: "searchField", placeholder: "Buscar Ciudad" %> 
+		<% end %>
+	</div>
+</header>

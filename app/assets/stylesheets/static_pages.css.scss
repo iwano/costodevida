@@ -1,0 +1,101 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+	/************************* Home **********************/
+
+header#mainHeader{				/************** Header ***********/
+	height:420px;
+	background:#87CCE5;
+    color:#FFF;
+	h1{
+		display: inline-block;
+		font-size:72px;
+	}
+	p{	
+		width:460px;
+		font-size: 18px;
+		margin-top: 1em;
+		clear:both;
+	}
+	a{
+		margin-top: 2em;
+	}
+	#searchBar{
+		float:right;
+		display: inline-block;
+		padding:10px;
+		background: #6FB5CD;
+		#searchField{
+			width:330px;
+			height:30px;
+			font-size: 24px;
+			padding:15px;
+		}
+	}
+}
+
+#homeMain{
+	display: block;
+	margin:0 auto;
+	width:960px;
+	padding-top: 50px;
+	height:200px;
+	section{
+		width:300px;
+		float:left;
+	}
+	section + section{
+		margin-left: 30px;
+	}
+}
+
+
+
+footer.footer{ 					/************** Footer ***********/
+	clear: both;
+	display: block;
+	background: #F0F0F0;
+	padding:20px 50px 50px 50px;
+	#menu_footer{
+		width:960px;
+		margin:0 auto;
+		ul{
+			list-style-type: none;
+			display: inline-block;
+			margin-bottom: 2em;
+			li{
+				float:left;
+				a{
+					background: #3F9CBB;
+					font-size: 16px;
+					line-height: 16px;
+					padding:10px;
+					width:auto;
+					height:auto;
+					&:hover{
+						background: #4FB4CD;
+					}
+				}
+			}
+			li + li{
+				margin-left: 2em;
+			}
+		}
+	}
+	#about{
+		clear:both;
+		width:960px;
+		margin:0 auto;
+		span{
+			font-size: 12px;
+		}
+		a{
+			text-decoration: none;
+			color:#666;
+			&:hover{
+				color:#FD745B;
+			}
+		}
+	}
+}

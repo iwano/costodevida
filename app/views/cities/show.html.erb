@@ -1,0 +1,24 @@
+<% provide(:title, "#{@city.name} - #{@state.name}") %>
+
+<%= render 'layouts/header' %>
+
+<div id='main' class='wrapper'>
+	
+	<%= render 'layouts/navbar' %>
+
+	<h1><%="#{@city.name} - #{@state.name}"%></h1>
+	<table class='table-striped'>  
+	 <tr>
+		<th>Descripcion</th>
+		<th>Precio</th>
+		<th></th>
+		<th></th>   
+	</tr>
+		<% @colaborations.each do |colaboration| %>	
+			<tr>
+				<td><h4><%= colaboration.description%></h4></td>
+				<td><h4><%= colaboration.price %></h4></td>
+			</tr>
+		<% end %>
+	</table>
+</div>

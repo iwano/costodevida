@@ -1,0 +1,25 @@
+<% provide(:title, "#{@state.name}") %>
+
+<%= render 'layouts/header' %>
+
+<div id='main' class='wrapper'>
+	
+	<%= render 'layouts/navbar' %>
+
+	<h1><%=@state.name%></h1>
+	<table class='table-striped'>  
+	 <tr>
+		<th>Ciudad</th>
+		<th>Ranking</th>
+		<th></th>
+		<th></th>   
+	</tr>
+		<% @cities.each do |city| %>	
+			<tr>
+				<td><h4><%= link_to city.name, city%></h4></td>
+				<td><h4><%= city.ranking %></h4></td>
+			</tr>
+		<% end %>
+	</table> 
+
+</div>

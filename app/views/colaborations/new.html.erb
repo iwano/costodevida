@@ -1,0 +1,31 @@
+<% provide(:title, "Colaborar") %> 
+
+<%= render 'layouts/header' %>
+
+<div id='main' class='wrapper'>
+	
+	<%= render 'layouts/navbar' %>
+
+	<div id='colaborationForm'>
+		<%= form_for(@colaboration) do |f| %>
+
+			<%= f.label "Estado" %>
+			<%= f.collection_select :state_id, @states, :id , :name, :prompt => "Estado"  %>
+
+			<div id="addressCities">
+				<%= render 'cities', f: f %>
+			</div>
+
+			<%= f.label "Categoria" %>
+			<%= f.collection_select :category_id, @categories, :id , :name, :prompt => "Categoria"  %><br />
+
+			<%= f.label "Descripcion" %>
+			<%= f.text_field :description, required: true, class: 'field' %><br />
+
+			<%= f.label "Precio" %>
+			<%= f.number_field :price, required: true, class: 'field' %><br />
+
+			<%= f.submit "Agregar", class: "button" %>
+		<% end %>
+	</div>
+</div>
