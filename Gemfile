@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.3'
 gem 'faker', '1.0.1'
 gem 'jquery-rails'
+gem "haml-rails"
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'

@@ -44,6 +44,12 @@ GEM
       multi_json (~> 1.0)
     faker (1.0.1)
       i18n (~> 0.4)
+    haml (3.1.4)
+    haml-rails (0.3.4)
+      actionpack (~> 3.0)
+      activesupport (~> 3.0)
+      haml (~> 3.0)
+      railties (~> 3.0)
     hike (1.2.1)
     i18n (0.6.1)
     journey (1.0.4)
@@ -124,6 +130,7 @@ DEPENDENCIES
   annotate (~> 2.4.1.beta)
   coffee-rails (~> 3.2.1)
   faker (= 1.0.1)
+  haml-rails
   jquery-rails
   pg (= 0.12.2)
   rails (= 3.2.3)
