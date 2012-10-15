@@ -23,7 +23,7 @@
 			<%= f.text_field :description, required: true, class: 'field' %><br />
 
 			<%= f.label "Precio" %>
-			<%= f.number_field :price, required: true, class: 'field' %><br />
+			<%= f.number_field :price, required: true, class: 'field', pattern: '(\d{3})([\.])(\d{2})' %><br />
 
 			<%= f.submit "Agregar", class: "button" %>
 		<% end %>
